@@ -6,16 +6,16 @@ const getSinglePost = async (id: number) => {
   return (await res.json()) as Post;
 };
 
-type Post = {
+interface Post {
   id: number;
   title: string;
   body: string;
-};
+}
 
-type Props = {
+interface Props {
   params: { id: number };
   searchParams: { [key: string]: string | string[] | undefined };
-};
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getSinglePost(params.id);

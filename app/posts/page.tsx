@@ -1,33 +1,13 @@
-import { Card, CardBody, Text, Button } from "@chakra-ui/react";
-import Link from "next/link";
+import { Heading } from "@chakra-ui/react";
+import PostsComponent from "../components/posts_component";
 
-type Post = {
-  id: number;
-  title: string;
-  body: string;
-};
-
-const PostsPage = async () => {
-  const getPosts = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    return (await res.json()) as Post[];
-  };
-  const posts = await getPosts();
-
+const PostPage = () => {
   return (
     <>
-      {posts.map((post) => (
-        <Card key={post.id}>
-          <CardBody>
-            <Text>{post.title}</Text>
-            <Link href={`/posts/${post.id}`}>
-              <Button colorScheme="blue">Read More</Button>
-            </Link>
-          </CardBody>
-        </Card>
-      ))}
+      <Heading>Posts Page</Heading>
+      <PostsComponent />
     </>
   );
 };
 
-export default PostsPage;
+export default PostPage;
