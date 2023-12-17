@@ -17,14 +17,14 @@ interface Props {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = await getSinglePost(params.id);
+// export async function generateMetadata({ params }: Props): Promise<Metadata> {
+//   const post = await getSinglePost(params.id);
 
-  return {
-    title: post.title,
-    openGraph: {},
-  };
-}
+//   return {
+//     title: post.title,
+//     openGraph: {},
+//   };
+// }
 
 const SinglePostPage = async ({ params }: Props) => {
   const post = await getSinglePost(params.id);

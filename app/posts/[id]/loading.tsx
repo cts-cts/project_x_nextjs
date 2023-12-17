@@ -1,3 +1,7 @@
-export default function Loading() {
-  return <h1>Loading Post...</h1>;
-}
+import { Spinner } from "@chakra-ui/react";
+
+const Loading = () => {
+  return <Spinner size="xl" />;
+};
+
+export default Loading;
