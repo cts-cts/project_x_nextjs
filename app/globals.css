@@ -1,0 +1,8 @@
+:root {
+  --plyr-color-main: #fbd0a5;
+  --plyr-video-control-color-hover: #2c3e50;
+  --plyr-badge-background: var(--plyr-video-control-color-hover);
+  --plyr-captions-background: transparent;
+  --plyr-menu-background: white;
+  --plyr-font-smoothing: true;
+}
