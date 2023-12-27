@@ -1,5 +1,5 @@
 import { Heading } from "@chakra-ui/react";
-import PostsComponent from "../components/posts_component";
+import PostsComponent from "../components/PostsComponent";
 
 const PostPage = () => {
   return (

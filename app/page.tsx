@@ -1,16 +1,9 @@
-// import dynamic from "next/dynamic";
-// import "../app/globals.css";
-// import "plyr-react/plyr.css";
-import PostsComponent from "./components/posts_component";
-// const VideoPlayerComponent = dynamic(
-//   () => import("./components/VideoPlayerComponent"),
-//   { ssr: false }
-// );
+import LoginComponent from "./components/LoginComponent";
 
 const HomePage = async () => {
   return (
     <>
-      <PostsComponent />
+      <LoginComponent />
     </>
   );
 };
