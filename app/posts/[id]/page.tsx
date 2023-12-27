@@ -3,7 +3,11 @@ import { Metadata, ResolvingMetadata } from "next";
 
 const getSinglePost = async (id: number) => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-  return (await res.json()) as Post;
+  console.log(res.status);
+
+  const xxx = (await res.json()) as Post;
+
+  return xxx;
 };
 
 interface Post {
@@ -28,13 +32,13 @@ interface Props {
 
 const SinglePostPage = async ({ params }: Props) => {
   const post = await getSinglePost(params.id);
+  console.log(post.title);
 
   return (
     <>
       <Card>
         <CardBody>
-          <Text>{post.title}</Text>
-          <Text>{post.body}</Text>
+          <Text>{`${post.title}`}</Text>
         </CardBody>
       </Card>
     </>
