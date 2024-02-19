@@ -3,6 +3,8 @@ import "./globals.css";
 import { fonts } from "./fonts";
 import { ColorModeScript } from "@chakra-ui/react";
 import StoreProvider from "./StoreProvider";
+import "@vidstack/react/player/styles/default/theme.css";
+import "@vidstack/react/player/styles/default/layouts/video.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
