@@ -5,8 +5,8 @@ class VideoService {
     try {
       const res = await axios.get(
         // `https://stream.mux.com/VZtzUzGRv02OhRnZCxcNg49OilvolTqdnFLEqBsTwaxU/low.mp4`,
-        `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4`,
-        // `https://store10.gofile.io/download/45588b39-f66c-4d37-8452-bdad46186be4/video.mp4`,
+        // `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4`,
+        `https://store10.gofile.io/download/45588b39-f66c-4d37-8452-bdad46186be4/video.mp4`,
         {
           headers: {
             Accept: "*/*",
